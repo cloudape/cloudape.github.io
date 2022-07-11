@@ -12,6 +12,7 @@ The Cloud associates need to be familiar with interacting with source repository
 
 ### Working with Git
 *CA0101*
+
 Git is a version control software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. 
 
 |Unit|Topic|
