@@ -1,13 +1,17 @@
 # About
-This is a training kit containing the essential skills for **Cloud Native** professionals.
+This is a training kit containing the essential skills for **Cloud Native** professionals. The content covers the following job roles:
+- Cloud Associates
+- Cloud Engineer
+- Devops Engineer
+- Cloud Architecture
 
 
-## Cloud Foundation
+## Cloud Associates
 
 Cloud foundation is for Associate Enginer.
 
-### CA0101: Git
-Git is a version control software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. In this introduction unit, the student will learn the basics of Git and get going with the most popular Git implementation - GitHub.
+### CA0101: Working with Git
+Git is a version control software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. 
 
 [Unit 01: Getting Started with Git](https://openlearnhack.github.io/CA0101/U01)
 
