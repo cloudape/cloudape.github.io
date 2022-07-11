@@ -1,0 +1,6 @@
+markdown: kramdown
+theme: cayman
+title: Cloud Native Warrior Training Kit
+description: Training content to help one jump start into cloud native.
+show_downloads: false
+site.github.repository_url: github.com/cloudape
