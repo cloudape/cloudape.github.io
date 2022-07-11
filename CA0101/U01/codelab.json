@@ -1,0 +1,27 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2022-07-11T03:31:54Z",
+  "id": "/CA0101/U01",
+  "duration": 40,
+  "title": "Getting Started with GIT",
+  "authors": "pyx7b",
+  "summary": "Git is a version control software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. In this introduction unit, the student will learn the basics of Git and get going with the most popular Git implementation - GitHub.",
+  "source": "1Dl6oHc8FMyj3Hknd2yb-X5-PA8p-Kl_8IAkjeakyYTQ",
+  "theme": "cloud",
+  "status": [
+    "not used"
+  ],
+  "category": [
+    "Cloud",
+    "CA0101"
+  ],
+  "tags": [
+    "cloud",
+    "fundamental",
+    "git"
+  ],
+  "url": "/CA0101/U01"
+}

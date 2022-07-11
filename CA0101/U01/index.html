@@ -1,0 +1,258 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Getting Started with GIT</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="/CA0101/U01"
+                  title="Getting Started with GIT"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Version Control Systems" duration="5">
+        <p>Version control systems have been used by developers working in teams to collaborate on software development. Even a 1 person development team needs a single repository that keeps track of source code changes and be able to know what changes were made when and if needed rollback changes to a particular version. In the case of a large development team, the version control system is critical to allow different people to work independently on different parts of the same source and don&#39;t override each other&#39;s changes.  </p>
+<aside class="warning"><p><strong>Version Control Saves the Day</strong></p>
+<p>Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.</p>
+</aside>
+<h2 is-upgraded><strong>What is Git?</strong></h2>
+<p><a href="https://git-scm.com/" target="_blank">Git</a> is the <strong>most popular</strong> version control system used by developers today. Whether it is writing code as an individual or as a team, being skilled in Git is fundamental for anyone who wants to code as a career. Watch the following video for a great introduction to version control and Git.</p>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/2ReR1YJrNOM?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 is-upgraded><strong>Different Git Implementations</strong></h2>
+<p>Git is an open source project that defines how version control is handled in a distributed manner and provides the command line interface and API for <strong>Git Client</strong> (i.e. developer machine) to interface with <strong>Git Server</strong> that hosts the remote repositories. The most popular Git Server is implemented by <a href="https://github.com" target="_blank">GitHub</a>  and other popular ones include <a href="https://about.gitlab.com" target="_blank">GitLab</a> and <a href="https://bitbucket.org" target="_blank">BitBucket</a>.</p>
+<p class="image-container"><img style="width: 550.20px" src="img/d263364fde0216e9.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Install GIT" duration="15">
+        <p>Let&#39;s get you started with Git on your developer machine.</p>
+<aside class="warning"><p>Sorry Linux and Windows users, this guide is written biased towards Mac users. Got the the end of this section for reference to Linux and Windows installation guides.</p>
+</aside>
+<h2 is-upgraded><strong>Mac User - Install Homebrew Package Manager</strong></h2>
+<h3 is-upgraded><strong>Xcode</strong></h3>
+<p>[<strong>1</strong>] Download <a href="https://developer.apple.com/xcode/" target="_blank">Xcode</a>. The installation will take a while.</p>
+<h3 is-upgraded><strong>Hombrew</strong></h3>
+<p>[<strong>2</strong>] We need a package manager. Install <a href="https://brew.sh/" target="_blank">Homebew</a> with the following command:</p>
+<pre>% /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;</pre>
+<p>[<strong>3</strong>] Add Homebrew to <code>PATH</code> to save some typing.</p>
+<p>[<strong>3a</strong>] Look for profile file for the default mac&#39;s .zsh shell in your home directory:</p>
+<pre>% cd
+% ls -ad .z*
+.zprofile        .zsh_history        .zsh_sessions</pre>
+<p>[<strong>3b</strong>] edit <code>.zprofile</code> file to add /opt/homebrew/bin path. I&#39;m a <code>vi</code> guy:</p>
+<pre>% vi .zprofile
+# Setting PATH for Python 3.10
+# The original version is saved in .zprofile.pysave
+PATH=&#34;/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:${PATH}&#34;
+export PATH</pre>
+<h3 is-upgraded><strong>Git</strong></h3>
+<p>[<strong>4</strong>] Install Git with Homebrew:</p>
+<pre>% brew install git</pre>
+<p>[<strong>5</strong>] Confirm that installation is successful by checking for the git version:</p>
+<pre>% git --version
+git version 2.32.0 (Apple Git-132)</pre>
+<aside class="special"><p><strong>Installation for Linux and Windows</strong></p>
+<ul>
+<li>Refer to the <a href="https://git-scm.com/download/linux" target="_blank">Linux installation guide</a> for different distros</li>
+<li>For Windows users, <a href="https://git-scm.com/download/win" target="_blank">download</a> the windows installer from the official site.</li>
+</ul>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Create your First Git Repo" duration="7">
+        <p>Now that you have the basics setup, it is time to create your first Git repository. Go to <a href="https://github.com" target="_blank"><strong>GitHub</strong></a>. </p>
+<ol type="1" start="1">
+<li>Click the <a href="https://github.com/signup" target="_blank"><paper-button class="colored" raised>Sign Up</paper-button></a> button.</li>
+<li>Enter your email address, select a strong password and pick a unique <strong>username</strong> that best represents your geek persona.</li>
+<li>Select the <strong>Free Plan</strong>.</li>
+<li>Once your account is created, you will be brought to the landing page. From there select <a href="https://github.com/new" target="_blank"><paper-button class="colored" raised>Create a new repository</paper-button></a>.</li>
+</ol>
+<p class="image-container"><img style="width: 624.00px" src="img/c8f515e0e26d42a9.png"></p>
+<ol type="1" start="5">
+<li>Name the repository <code>myfirstrepo</code> and set the repository as <code>Private</code> and check the <code>Add a Readme file</code> option. Click the <strong>Create repository</strong> button.</li>
+</ol>
+<p class="image-container"><img style="width: 646.69px" src="img/77e2d493bbdddf56.png"><br></p>
+<ol type="1" start="6">
+<li>You will be brought to your <strong>myfirstrepo</strong> page. Technically the full repository includes your username, in my case it is <code>pyx7b/myfirstrepo</code>. </li>
+</ol>
+<p class="image-container"><img style="width: 661.00px" src="img/42a9154104a7ecf8.png"></p>
+<ol type="1" start="7">
+<li>Congrats! You have created your first repository in GitHub.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Secure your Git Account" duration="7">
+        <p>Source code repositories are often the crown jewel that attackers want to gain access to compromise the software from source. It is therefore important for developers to have good security practices starting with securing their logins. Perform the following 2 essential steps to secure your Git Account.</p>
+<h2 is-upgraded><strong>Turn in 2 Factor Authentication</strong></h2>
+<p>The first step is to turn on <a href="https://www.techtarget.com/searchsecurity/definition/two-factor-authentication" target="_blank">2FA</a>, </p>
+<ol type="1" start="1">
+<li>Go to the top right icon, click on it to see the dropdown menu. Select  <strong>Settings</strong>.</li>
+</ol>
+<p class="image-container"><img style="width: 197.50px" src="img/b94aeb4bd8a44aa.png"></p>
+<ol type="1" start="2">
+<li>On the left panel select <strong>Password and Authentication </strong>and on the central panel click the <strong>Enable two-factor authentication</strong> button.</li>
+</ol>
+<p class="image-container"><img style="width: 663.50px" src="img/247f0506bdfc912b.png"></p>
+<ol type="1" start="3">
+<li>I recommend you use the <strong>set up using an app</strong> option as it is a more secure approach. Follow through the instructions to complete the setup.</li>
+</ol>
+<h2 is-upgraded><strong>Use Personal Access Token</strong></h2>
+<p>Personal access tokens can be used instead of a password for Git over HTTPS, or can be used to authenticate to the API over Basic Authentication. In this way, it reduces the need to use your password. </p>
+<ol type="1" start="1">
+<li>Go to the top right icon, click on it to see the dropdown menu. Select  <strong>Settings</strong>.</li>
+<li>On the left panel, scroll down and  select <strong>Developer Settings</strong>.</li>
+<li>Select <strong>Personal Access Token</strong> and click the <strong>Generate new token </strong>button.</li>
+</ol>
+<p class="image-container"><img style="width: 672.47px" src="img/ae17aa62f522ae81.png"></p>
+<ol type="1" start="4">
+<li>Grant only the required scope needed for the task, in this case for a role of a developer. Scroll to the bottom and click the <strong>Generate Token</strong> button to generate the token</li>
+</ol>
+<p class="image-container"><img style="width: 682.50px" src="img/e5c6841366253bda.png"></p>
+<ol type="1" start="5">
+<li>Copy the <code>generated token</code> and save it securely e.g. with a Password Manager. We will be using the token in the next chapter.</li>
+</ol>
+<p class="image-container"><img style="width: 691.00px" src="img/47b06262b240d19e.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Working with Repository from your Developer Machine" duration="5">
+        <h2 is-upgraded><strong>Clone Repository</strong></h2>
+<p>To work with the repository from your desktop, first you need to clone or copy the repository from GitHub to your development machine.</p>
+<ol type="1" start="1">
+<li>Let&#39;s clone the <code>myfirstrepo</code> repository. Given its the first time we are logging into Git from our developer machine, supply your username as a prefix <code><username>@.</code> Subsequently you need not supply the prefix. </li>
+</ol>
+<pre>% git clone https://pyx7b@github.com/pyx7b/myfirstrepo.git
+Cloning into &#39;myfirstrepo&#39;...
+Password for &#39;https://pyx7b@github.com&#39;: </pre>
+<ol type="1" start="2">
+<li>When challenged for the password, supply the personal access token as the password. </li>
+<li>The repo is now cloned to your computer, change directory and execute <code>ls -a</code> on the directory.</li>
+</ol>
+<pre>% cd myfirstrepo
+% ls -a
+.                ..                .git                README.md               </pre>
+<ol type="1" start="4">
+<li>You will observe that it contains the <code>README.md</code> file that was created when we create the repository and also a hidden <code>.git</code> directory.</li>
+</ol>
+<h2 is-upgraded><strong>Make Changes</strong></h2>
+<p>We will execute a few commands to make changes to the local repository and push changes to GitHub. We will elaborate the details of the commands in latter units.</p>
+<ol type="1" start="1">
+<li>Use your favorite editor to edit the <code>README.md</code> file to the following:</li>
+</ol>
+<pre># Introduction
+This is my first repository.</pre>
+<ol type="1" start="2">
+<li>Execute the <code>git status</code> command. It shows that <code>README.md</code> is modified but <strong>changes are not staged. </strong>Basically, it meant we have edit the fir</li>
+</ol>
+<pre>% git status
+On branch main
+Your branch is up to date with &#39;origin/main&#39;.
+
+Changes not staged for commit:
+  (use &#34;git add &lt;file&gt;...&#34; to update what will be committed)
+  (use &#34;git restore &lt;file&gt;...&#34; to discard changes in working directory)
+        modified:   README.md         </pre>
+<ol type="1" start="3">
+<li>Next execute <code>git add .</code> followed by <code>git status</code>. The <code>README.md</code> file is now <strong>staged</strong>.</li>
+</ol>
+<pre>% git add .
+% git status
+On branch main
+Your branch is up to date with &#39;origin/main&#39;.
+
+Changes to be committed:
+  (use &#34;git restore --staged &lt;file&gt;...&#34; to unstage)
+        modified:   README.md         </pre>
+<ol type="1" start="4">
+<li>Next execute <code>git commit</code> to commit the changes and label it as &#34;<em>my first commit</em>&#34;: </li>
+</ol>
+<pre>% git add .
+% git commit -m &#34;my first commit&#34;
+[main 557c787] my first commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)            </pre>
+<ol type="1" start="5">
+<li>Next <code>push</code> the change to the <code>main</code> branch on the remote repository - called <code>origin</code>:</li>
+</ol>
+<pre>% git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 265 bytes | 265.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pyx7b/myfirstrepo.git
+   30e9da7..557c787  main -&gt; main          </pre>
+<aside class="warning"><p><strong>Note</strong></p>
+<p>The commands and parameters may be confusing for now. Don&#39;t worry, we will go through the details in the next unit.</p>
+</aside>
+<h2 is-upgraded><strong>Observe</strong></h2>
+<p>Login to your GitHub repository to observe the changes. </p>
+<ol type="1" start="1">
+<li>From the repository page, you will notice that the <code>README.md</code> file has been modified.</li>
+</ol>
+<p class="image-container"><img style="width: 679.00px" src="img/7281e42769360816.png"></p>
+<ol type="1" start="2">
+<li>Click on the blue <strong>2 commits</strong> label to view the commit history. You can see the commit label &#34;<em>my first commit</em>&#34;. Click on the blue coloured ID associated with the line item:</li>
+</ol>
+<p class="image-container"><img style="width: 687.00px" src="img/1b8fb7fffafab144.png"></p>
+<ol type="1" start="3">
+<li>You will be able to see the exact changes that was made to <code>README.md</code> in that commit:</li>
+</ol>
+<p class="image-container"><img style="width: 686.50px" src="img/c169f2d98cfdef3.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Summary" duration="1">
+        <p>Congratulations you have completed the first unit of getting started with Git! </p>
+<h2 class="checklist" is-upgraded><strong>What we&#39;ve covered</strong></h2>
+<ul class="checklist">
+<li>Gained basic understanding of what is a version control system and Git.</li>
+<li>Install Git on your developer machine.</li>
+<li>Created a GitHub account and secured it.</li>
+<li>Clone a repository locally.</li>
+<li>Make changes and push changes to remote repositories.</li>
+</ul>
+<h2 is-upgraded><strong>Resource and References</strong></h2>
+<p>This unit is meant to cover the essentials for you to understand how Git works. If you want to dive deeper, refer to the following resources.</p>
+<aside class="special"><p><strong>Resources</strong></p>
+<p><a href="https://docs.github.com/en" target="_blank">GitHub Docs</a></p>
+<p><a href="https://git-scm.com/" target="_blank">Git</a></p>
+<p><a href="https://git-scm.com/book/en/v2" target="_blank">Pro Git Book</a></p>
+<p><a href="https://www.tutorialspoint.com/git/index.htm" target="_blank">Git Tutorial on Tutorialspoint </a></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

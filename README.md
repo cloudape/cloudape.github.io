@@ -17,11 +17,11 @@ Git is a version control software for tracking changes in any set of files, usua
 
 |Unit|Topic|
 |----|-----|
-|01|[Getting Started with Git](https://cloudape.github.io/CA0101/U01)|
-|02|[Git Commands](/CA0101/U01)|
-|03|[Branching and Merging](https://cloudape.github.io/CA0101/U03)|
-|04|[Git Housekeeping](https://cloudape.github.io/CA0101/U04)|
-|05|[GitOps](https://cloudape.github.io/CA0101/U05)|
+|01|[Getting Started with Git](/CA0101/U01)|
+|02|[Git Commands](/CA0101/U02)|
+|03|[Branching and Merging](/CA0101/U03)|
+|04|[Git Housekeeping](/CA0101/U04)|
+|05|[GitOps](/CA0101/U05)|
 
 
 ### CA0102: Linux Basics
