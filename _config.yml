@@ -1,10 +1,10 @@
 title: Cloud Native Warrior
-description: Training programme to help one jump start into cloud native.
+description: Training programme to help one jump start into the cloud native jounrney.
 theme: jekyll-theme-cayman
 show_downloads: false
 github:
   is_project_page: true
   repository_url: https://github.com/cloudape/cloudape.github.io
   owner_url: https://github.com/pyx7b/
-  
+
 

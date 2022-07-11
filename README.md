@@ -3,7 +3,7 @@ This is a training kit containing the essential skills for **Cloud Native** prof
 - Cloud Associates
 - Cloud Engineer
 - Devops Engineer
-- Cloud Architecture
+- Cloud Architect
 
 The content for each role contains a practical hands-on courses consists of micro-learning units. Each unit is designed with clear learning objectives so that the learner can immediately apply the skills learn on the job.
 
