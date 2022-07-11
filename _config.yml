@@ -1,5 +1,8 @@
 title: Cloud Native Warrior Training Kit
+page.title: Cloud Native Warrior Training Kit
 description: Training content to help one jump start into cloud native.
-show_downloads: true
-site.github.repository_url: github.com/cloudape
+show_downloads: false
+github.is_project_page: true
+github.repository_url: github.com/cloudape
+github.owner_url: github.com/pyx7b
 theme: jekyll-theme-cayman
