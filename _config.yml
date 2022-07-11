@@ -4,6 +4,7 @@ theme: jekyll-theme-cayman
 show_downloads: false
 github:
   is_project_page: true
-  repository_url: github.com/cloudape
-  owner_url: github.com/pyx7b
+  repository_url: https://github.com/cloudape/cloudape.github.io
+  owner_url: https://github.com/pyx7b/
+  
 
