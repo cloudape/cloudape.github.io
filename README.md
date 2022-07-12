@@ -5,14 +5,12 @@ This is a training kit containing the essential skills for **Cloud Native** prof
 - Devops Engineer
 - Cloud Architect
 
-The content for each role contains a practical hands-on courses consists of micro-learning units. Each unit is designed with clear learning objectives so that the learner can immediately apply the skills learn on the job.
+The content for each role contains a practical hands-on courses consists of micro-learning units. Each unit is designed with clear learning objectives so that the learner can immediately apply the skills learned to the job.
 
 ## Cloud Associates
 The Cloud associates need to be familiar with interacting with source repository, familiar with Linux, understand web technologies and be familiar with containers as a foundation. On top of that, the associates need to understand the fundamentals of Cybersecurity, understand cloud-native approaches, able to develop Terraform Infra-As-Code and understand the concepts of Agile Practices.
 
-### Working with Git
-*CA0101*
-
+### CA0101: Working with Git
 Git is a version control software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. 
 
 |Unit|Topic|
@@ -55,9 +53,9 @@ Git is a version control software for tracking changes in any set of files, usua
 
 ### CB0107: Cloud Security
 
+### CB0108: Cloud Infrastructure Solutions
 
 ## Devops Engineer (PL2)
-
 
 ### CC0101: Mastering Python
 
@@ -71,3 +69,5 @@ Git is a version control software for tracking changes in any set of files, usua
 ## Cloud Architect
 
 ### CA0107: Product Management 
+
+
