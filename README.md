@@ -72,12 +72,12 @@ Git is a version control software for tracking changes in any set of files, usua
 
 
 # Contribution
-The content are created using (Google CodeLab)[https://github.com/googlecodelabs/tools]. Follow the guide in the link to create Google doc content.
+The content are created using [Google CodeLab](https://github.com/googlecodelabs/tools). Follow the guide in the link to create Google doc content.
 
 ## Install Claat on Your Mac
 To generate static web pages from the Google Doc, you will need to first install `claat`.
 
-1. Install (Go)[https://go.dev/doc/install]
+1. Install [Go](https://go.dev/doc/install)
 
 2. Install Claat
 ```
