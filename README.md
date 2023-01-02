@@ -71,3 +71,38 @@ Git is a version control software for tracking changes in any set of files, usua
 ### CA0107: Product Management 
 
 
+# Contribution
+The content are created using (Google CodeLab)[https://github.com/googlecodelabs/tools]. Follow the guide in the link to create Google doc content.
+
+## Install Claat on Your Mac
+To generate static web pages from the Google Doc, you will need to first install `claat`.
+
+1. Install (Go)[https://go.dev/doc/install]
+
+2. Install Claat
+```
+$ go install github.com/googlecodelabs/tools/claat@latest
+
+```
+
+3. The claat binary should be found in the Go bin directory within your home directory:
+   
+```
+$ find ~/go -name claat
+/Users/xxxx/go/bin/claat
+/Users/xxxx/go/pkg/mod/cache/download/github.com/googlecodelabs/tools/claat
+/Users/xxxx/go/pkg/mod/github.com/googlecodelabs/tools@v2.2.5+incompatible/site/app/js/claat
+```
+
+## Generate Static Web Page
+To generate the static web page for the [example doc](https://docs.google.com/document/d/1rpHleSSeY-MJZ8JvncvYA8CFqlnlcrW8-a4uEaqizPY/), run `claat export` for the document ID: 
+```
+$ ~/go/bin/claat export 1rpHleSSeY-MJZ8JvncvYA8CFqlnlcrW8-a4uEaqizPY 
+ok      your-first-pwapp
+
+$ ls your-first-pwapp/
+codelab.json	img		index.html
+```
+
+
+

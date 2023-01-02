@@ -3,7 +3,7 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2022-07-11T03:31:54Z",
+  "updated": "2022-07-11T03:35:56Z",
   "id": "/CA0101/U01",
   "duration": 40,
   "title": "Getting Started with GIT",
@@ -12,11 +12,11 @@
   "source": "1Dl6oHc8FMyj3Hknd2yb-X5-PA8p-Kl_8IAkjeakyYTQ",
   "theme": "cloud",
   "status": [
-    "not used"
+    "notused"
   ],
   "category": [
-    "Cloud",
-    "CA0101"
+    "cloud",
+    "ca0101"
   ],
   "tags": [
     "cloud",
